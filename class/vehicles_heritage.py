@@ -9,8 +9,14 @@ class vehicles :
         self.n_wheels = n_wheels
 
     def start_engine(self) -> str:
-        print(f"{self.__class__.__name__} starting engine...")
+        print(f"\n{self.__class__.__name__} starting engine...")
         print("engine running!")
+
+    def __str__(self) -> str:
+        
+        return f" \n#### {self.__class__.__name__} ####\n{"\n".join([f"{key}: {value} " for key, value 
+                                         in self.__dict__.items()])}"
+        
     
 class car(vehicles):
     pass
@@ -31,6 +37,8 @@ class truck(vehicles):
 car = car("red","abcd-123",4)
 print(car)
 car.start_engine()
+
+### Instantiating other vehicles
 
 ### Motorcycle
 
