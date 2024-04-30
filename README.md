@@ -1,2 +1,2 @@
 # poo-python
-this repository has object-oriented programming in python
+This repository aims to demonstrate object-oriented programming in Python
