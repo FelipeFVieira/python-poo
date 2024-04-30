@@ -12,3 +12,12 @@ class vehicles :
         print("starting engine...")
         print("engine running!")
     
+class car(vehicles):
+    pass
+
+
+### Demonstrating how inheritance works
+
+car = car("red","abcd-123",4)
+print(car)
+car.start_engine()
