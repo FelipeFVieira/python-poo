@@ -1,13 +1,14 @@
 class Animal():
-    pass
+    def __init__(self, n_paws, n_eyes,  ) -> None:
+        self.n_paws = n_paws
+        self.n_eyes = n_eyes
 
 
 class Mammal(Animal):
-    pass
-
+    
 
 class Birds(Animal):
-    pass
+    
 
 
 class Dog(Mammal):
