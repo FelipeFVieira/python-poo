@@ -3,6 +3,10 @@ class Animal():
         self.n_paws = n_paws
         self.n_eyes = n_eyes
 
+    def __str__(self) -> str:
+        
+        return f" \n#### {self.__class__.__name__} ####\n{"\n".join([f"{key}: {value} " for key, value 
+                                         in self.__dict__.items()])}"
 
 class Mammal(Animal):
     def __init__(self, fur_color, **kw) -> None:
@@ -16,7 +20,8 @@ class Birds(Animal):
 
 
 class Dog(Mammal):
-    pass
+    def bark(self):
+        print("i'm barking!!!")
 
 
 class Cat(Mammal):
@@ -29,3 +34,4 @@ class Lion(Mammal):
 
 class Platyplus(Mammal, Birds):
     pass
+
