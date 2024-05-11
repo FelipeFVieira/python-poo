@@ -20,7 +20,7 @@ class Birds(Animal):
 
 
 class Dog(Mammal):
-    
+
     def bark(self) -> None:
         print("i'm barking!!!")
 
@@ -43,3 +43,18 @@ class Platyplus(Mammal, Birds):
     def grunt(self) -> None:
         print("i'm grunting")
 
+dog = Dog(fur_color="caramel",n_paws=4,n_eyes=2)
+print(dog)
+dog.bark()
+
+cat = Cat(fur_color="black",n_paws=4,n_eyes=2)
+print(cat)
+cat.meow()
+
+lion = Lion(fur_color="orange",n_paws=4,n_eyes=2)
+print(lion)
+lion.roar()
+
+platyplus = Platyplus(fur_color="brown",beak_color="orange",n_paws=4,n_eyes=2)
+print(platyplus)
+platyplus.grunt()
