@@ -20,12 +20,14 @@ class Birds(Animal):
 
 
 class Dog(Mammal):
-    def bark(self):
+    def bark(self) -> None:
         print("i'm barking!!!")
 
 
 class Cat(Mammal):
-    pass
+    def meow(self) -> None:
+        print("i'm meowing!!")
+
 
 
 class Lion(Mammal):
