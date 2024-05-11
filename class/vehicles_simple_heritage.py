@@ -10,7 +10,7 @@ class vehicles :
         self.license_plate = license_plate
         self.n_wheels = n_wheels
 
-    def start_engine(self) -> str:
+    def start_engine(self) -> None:
         print(f"\n{self.__class__.__name__} starting engine...")
         print("engine running!")
 
@@ -33,7 +33,7 @@ class truck(vehicles):
         super().__init__(color, license_plate, n_wheels) 
         self.loaded = loaded
 
-    def is_it_loaded(self) -> str:
+    def is_it_loaded(self) -> None:
         print(f"The truck {"is" if self.loaded == True else "is not"} loaded!")
 
 ### Demonstrating how inheritance works
@@ -59,3 +59,4 @@ truck = truck("red","abcd-321",8,False)
 print(truck)
 truck.is_it_loaded()
 truck.start_engine()
+
