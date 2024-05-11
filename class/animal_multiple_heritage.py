@@ -5,10 +5,14 @@ class Animal():
 
 
 class Mammal(Animal):
-    
+    def __init__(self, fur_color, **kw) -> None:
+        super().__init__(**kw)
+        self.fur_color = fur_color
 
 class Birds(Animal):
-    
+    def __init__(self, beak_color, **kw) -> None:
+        super().__init__(**kw)
+        self.beak_color = beak_color
 
 
 class Dog(Mammal):
