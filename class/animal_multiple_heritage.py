@@ -20,20 +20,26 @@ class Birds(Animal):
 
 
 class Dog(Mammal):
+    
     def bark(self) -> None:
         print("i'm barking!!!")
 
 
 class Cat(Mammal):
+
     def meow(self) -> None:
-        print("i'm meowing!!")
+        print("i'm meowing!!!")
 
 
 
 class Lion(Mammal):
-    pass
+
+    def roar(self) -> None:
+        print("i'm roaring!!!")
 
 
 class Platyplus(Mammal, Birds):
-    pass
+
+    def grunt(self) -> None:
+        print("i'm grunting")
 
